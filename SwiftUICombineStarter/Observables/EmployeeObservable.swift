@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class EmployeeObservable: ObservableObject {
+final class EmployeeObservable {
 
     static let shared = EmployeeObservable()
     private init() {
