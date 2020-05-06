@@ -66,6 +66,8 @@
 		A89E27DB245F1854007360AF /* SwiftUICombineStarter */ = {
 			isa = PBXGroup;
 			children = (
+				A89E27DC245F1854007360AF /* AppDelegate.swift */,
+				A89E27DE245F1854007360AF /* SceneDelegate.swift */,
 				A89E27F5245F1907007360AF /* Model */,
 				A89E27F6245F190E007360AF /* Observables */,
 				A89E27F7245F191C007360AF /* Views */,
@@ -114,8 +116,6 @@
 		A89E27F8245F192E007360AF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				A89E27DC245F1854007360AF /* AppDelegate.swift */,
-				A89E27DE245F1854007360AF /* SceneDelegate.swift */,
 				A89E27E5245F1856007360AF /* Assets.xcassets */,
 				A89E27EA245F1856007360AF /* LaunchScreen.storyboard */,
 			);
