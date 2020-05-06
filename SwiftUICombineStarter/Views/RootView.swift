@@ -12,7 +12,7 @@ struct RootView: View {
     var body: some View {
         
         TabView {
-            Text("Tab1").tabItem() {
+            ListView().tabItem() {
                 Text("List")
                 Image(systemName: "list.bullet")
             }

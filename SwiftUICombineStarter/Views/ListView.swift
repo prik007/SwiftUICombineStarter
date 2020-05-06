@@ -15,10 +15,47 @@ struct ListView: View {
                  ListItem(title: "Contact", subTitle: "9876543210", image: "phone"),
                  ListItem(title: "Asset", subTitle: "PDF", image: "doc")]
     
+    @State var isShowingAlert = false
+    @State var isShowingSheet = false
+    
     var body: some View {
-        List(items, id: \.title) { item in
-            ItemCell(item: item)
+        
+        NavigationView {
+            List(items, id: \.title) { item in
+                
+                ZStack {
+                    ItemCell(item: item)
+                    NavigationLink(destination: PageView()) {
+                        EmptyView()
+                    }
+                }
+            }
+            .onAppear(){UITableView.appearance().tableFooterView = UIView()}
+            .navigationBarTitle("List", displayMode: .large)
+            .navigationBarItems(leading: leftButton, trailing: rightButton)
+            .alert(isPresented: $isShowingAlert) {
+                alert
+            }
+            .sheet(isPresented: $isShowingSheet) {
+                Text("Sheet")
+            }
         }
+    }
+    
+    var leftButton: some View {
+        Button(action: { self.isShowingSheet = true }) {
+            Text("Left item")
+        }
+    }
+    
+    var rightButton: some View {
+         Button(action: { self.isShowingAlert = true }) {
+            Text("Right item")
+        }
+    }
+    
+    var alert: Alert {
+        Alert(title: Text("Title") , message: Text("Message"), dismissButton: .default(Text("OK")))
     }
 }
 

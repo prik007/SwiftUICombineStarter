@@ -24,6 +24,7 @@ struct ItemCell: View {
                 Text(item.title).font(.headline)
                 Text(item.subTitle).font(.subheadline).foregroundColor(.gray)
             }
+            Spacer()
         }
     }
 }
