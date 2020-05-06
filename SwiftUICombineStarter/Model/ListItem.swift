@@ -16,6 +16,7 @@ struct ListItem {
     var image: String
     
     init(title: String, subTitle: String, image: String) {
+        
         self.title = title
         self.subTitle = subTitle
         self.image = image
