@@ -9,8 +9,9 @@
 import Foundation
 
 
-struct ListItem {
+struct ListItem: Identifiable {
     
+    var id = UUID()
     var title: String
     var subTitle: String
     var image: String

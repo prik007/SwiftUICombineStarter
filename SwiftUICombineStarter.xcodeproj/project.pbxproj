@@ -20,6 +20,8 @@
 		A89E280824628B99007360AF /* EmployeeObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E280724628B99007360AF /* EmployeeObservable.swift */; };
 		A89E28132462E053007360AF /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E28112462E053007360AF /* PageView.swift */; };
 		A89E28142462E053007360AF /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E28122462E053007360AF /* PageViewController.swift */; };
+		A8B789B02473E72F00828258 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789AF2473E72F00828258 /* WebView.swift */; };
+		A8B789B22473E9EB00828258 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789B12473E9EB00828258 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		A89E280724628B99007360AF /* EmployeeObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeObservable.swift; sourceTree = "<group>"; };
 		A89E28112462E053007360AF /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		A89E28122462E053007360AF /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		A8B789AF2473E72F00828258 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A8B789B12473E9EB00828258 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				A89E27FB245F198F007360AF /* ItemCell.swift */,
 				A89E28112462E053007360AF /* PageView.swift */,
 				A89E28122462E053007360AF /* PageViewController.swift */,
+				A8B789AF2473E72F00828258 /* WebView.swift */,
+				A8B789B12473E9EB00828258 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A89E280824628B99007360AF /* EmployeeObservable.swift in Sources */,
+				A8B789B22473E9EB00828258 /* DetailView.swift in Sources */,
 				A89E28142462E053007360AF /* PageViewController.swift in Sources */,
 				A89E27F4245F18FC007360AF /* ListItem.swift in Sources */,
 				A89E27DD245F1854007360AF /* AppDelegate.swift in Sources */,
@@ -209,6 +216,7 @@
 				A89E27DF245F1854007360AF /* SceneDelegate.swift in Sources */,
 				A89E28132462E053007360AF /* PageView.swift in Sources */,
 				A89E27E4245F1854007360AF /* RootView.swift in Sources */,
+				A8B789B02473E72F00828258 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

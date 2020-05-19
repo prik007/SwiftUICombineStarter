@@ -13,7 +13,8 @@ struct ListView: View {
     
    var items = [ListItem(title: "Name", subTitle: "Jack Ryan", image: "info"),
                  ListItem(title: "Contact", subTitle: "9876543210", image: "phone"),
-                 ListItem(title: "Asset", subTitle: "PDF", image: "doc")]
+                 ListItem(title: "Asset", subTitle: "PDF", image: "doc"),
+                 ListItem(title: "Name", subTitle: "Steve", image: "doc")]
     
     @State var isShowingAlert = false
     @State var isShowingSheet = false
@@ -21,11 +22,11 @@ struct ListView: View {
     var body: some View {
         
         NavigationView {
-            List(items, id: \.title) { item in
+            List(items) { item in
                 
                 ZStack {
                     ItemCell(item: item)
-                    NavigationLink(destination: PageView()) {
+                    NavigationLink(destination: DetailView()) {
                         EmptyView()
                     }
                 }
